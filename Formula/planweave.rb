@@ -1,8 +1,8 @@
 class Planweave < Formula
   desc "File-backed plan graph workflow for AI coding agents"
   homepage "https://github.com/GaosCode/PlanWeave"
-  url "https://registry.npmjs.org/@planweave-ai/cli/-/cli-0.1.9.tgz"
-  sha256 "52d6c34cc81f37f5e5215867f8f9985dd4b47cd9ec3409afa921591fa811c2f3"
+  url "https://registry.npmjs.org/@planweave-ai/cli/-/cli-0.2.0.tgz"
+  sha256 "a346c700453e55292dcd517c4cfbd20272ac79cfd56d3c4994da10fc7516b2c4"
   license "MIT"
 
   depends_on "node"
@@ -13,7 +13,7 @@ class Planweave < Formula
   end
 
   test do
-    assert_match "0.1.9", shell_output("#{bin}/planweave --version")
+    assert_match "0.2.0", shell_output("#{bin}/planweave --version")
     assert_match "Usage:", shell_output("#{bin}/planweave --help")
   end
 end
